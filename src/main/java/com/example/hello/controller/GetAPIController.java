@@ -60,7 +60,7 @@ public class GetAPIController {
     }
 
     @GetMapping(path = "/query-param03") // 받아올 매개를 정확히 알 때 사용하는 방법2, 대부분이 이렇게 사용함,
-    // 정보... 같은 경로로 dto 이름의 패키지가 존재하며,
+    // 정보 : 같은 경로로 dto 이름의 패키지가 존재하며,
     // 그 안에 private 필드로 받아올 매개 값의 키와 같은 필드가 존재, 필드마다 Getter, Setter 존재
     public String queryParam03(UserRequest userRequest) {
         System.out.println("Query(name) : value ... " + userRequest.getName());
